@@ -34,7 +34,7 @@ func test_tileson_parser_validity() -> void:
     var first_layer: TiledLayer = layers[0]
     assert_not_null(first_layer, "Layer should be properly cast to TiledLayer")
     assert_true(first_layer.get_name() != "", "Layer should have a name")
-    assert_true(first_layer.get_type() != "", "Layer should have a type")
+    assert_true(first_layer.get_tson_type() != "", "Layer should have a type")
     
     # Layer newly bound properties check
     assert_true(typeof(first_layer.get_opacity()) == TYPE_FLOAT, "Layer opacity should be float")
