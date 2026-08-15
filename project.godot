@@ -11,10 +11,5 @@ config_version=5
 [application]
 
 config/name="Tiled Importer Tests"
-run/main_scene="res://run_tests.gd"
 config/features=PackedStringArray("4.3")
 config/icon="res://icon.svg"
-
-[autoload]
-
-AutoworkController="*res://run_tests.gd"
